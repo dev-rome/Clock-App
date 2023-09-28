@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Frontend Mentor | Clock App</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="bg-image"></div>
+        <div class="grid-container">
+
+
+
+
+          
+          <div class="quote-container">
+            <blockquote class="quote">
+              <p class="quote-text">
+                “The science of operations, as derived from mathematics more
+                especially, is a science of itself, and has its own abstract
+                truth and value.”
+              </p>
+              <footer class="quote-author">Ada Lovelace</footer>
+            </blockquote>
+            <button class="btn-refresh">
+              <img
+                src="./assets/desktop/icon-refresh.svg"
+                alt="refresh icon"
+                class="refresh"
+              />
+            </button>
+          </div>
+
+          <div class="time-container">
+            <div class="greeting-container">
+              <img src="./assets/desktop/icon-sun.svg" alt="sun" />
+              <p class="greeting-text">GOOD MORNING</p>
+            </div>
+            <div class="time-wrapper">
+              <p class="current-time">11:37</p>
+              <span class="current-timezone">BST</span>
+            </div>
+            <p class="current-location">
+              IN <span class="city">LONDON</span>,
+              <span class="country">UK</span>
+            </p>
+
+            <button class="btn-info">
+              MORE
+              <div class="arrow-container">
+                <img
+                  src="./assets/desktop/icon-arrow-down.svg"
+                  alt="down arrow"
+                />
+              </div>
+            </button>
+          </div>
+
+         
+          <div class="time-info-container hide">
+            <div class="info-panel">
+              <div class="timezone-info">
+                <p class="info-label timezone-label">CURRENT TIMEZONE</p>
+                <p class="info-data timezone-data">Europe/London</p>
+              </div>
+              <div class="day-of-year-info">
+                <p class="info-label day-of-year-label">DAY OF THE YEAR</p>
+                <p class="info-data day-of-year-data">295</p>
+              </div>
+              <div class="day-of-week-info">
+                <p class="info-label day-of-week-label">DAY OF THE WEEK</p>
+                <p class="info-data day-of-week-data">5</p>
+              </div>
+              <div class="week-number-info">
+                <p class="info-label week-number-label">WEEK NUMBER</p>
+                <p class="info-data week-number-data">42</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        
+
+      </section>
+    </main>
+  </body>
+</html>

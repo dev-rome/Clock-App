@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  /* colors */
+  --black: hsl(0, 0%, 0%);
+  --grey: hsl(0, 0%, 19%);
+  --white: hsl(0, 0%, 100%);
+
+  /* font-family */
+  --ff-inter: "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-inter);
+  color: var(--white);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+.quote-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.875rem 1.625rem 0;
+}
+
+.quote-text {
+  font-size: 0.75rem;
+  line-height: 22px;
+}
+
+.quote-author {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.btn-refresh {
+  background: none;
+  border: none;
+}
+
+.refresh {
+  width: 1rem;
+  height: 1rem;
+  object-fit: cover;
+}
+
+.time-container {
+  align-self: end;
+  padding-left: 1.625rem;
+}
+
+.greeting-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.greeting-text {
+  font-size: 0.938rem;
+  letter-spacing: 3px;
+}
+
+.time-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 0.313rem;
+  margin-top: 1rem;
+}
+
+.current-time {
+  font-size: 6.25rem;
+  font-weight: bold;
+}
+
+.current-timezone {
+  font-size: 0.938rem;
+  font-weight: 300;
+}
+
+.current-location {
+  font-size: 0.938rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 1rem;
+}
+
+.btn-info {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 0.938rem;
+  border: none;
+  border-radius: 28px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 3.75px;
+  padding: 0.375rem 0.25rem 0.375rem 1.063rem;
+  margin: 3rem 0 2.5rem 0;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.time-info-container {
+  background-color: hsla(0, 0%, 100%, 75%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 3rem 1.625rem;
+}
+
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timezone-info,
+.day-of-year-info,
+.day-of-week-info,
+.week-number-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-label {
+  font-size: 0.625rem;
+  letter-spacing: 2px;
+  color: var(--grey);
+}
+
+.info-data {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--grey);
+}
+
+.hide {
+  display: none;
+}
+
+.day {
+  background-image: url("./assets/mobile/bg-image-daytime.jpg");
+}
+
+.night {
+  background-image: url("./assets/mobile/bg-image-nighttime.jpg");
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .quote-container {
+    grid-column: 1 / span 11;
+    padding: 5rem 0rem 0 4rem;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
+
+  .time-container {
+    grid-row-start: 2;
+    padding-left: 4rem;
+    align-self: baseline;
+  }
+
+  .greeting-text {
+    font-size: 1rem;
+    letter-spacing: 3.6px;
+  }
+
+  .btn-info {
+    margin-bottom: 4rem;
+  }
+
+  .time-info-container {
+    grid-row-start: 3;
+    grid-column: 1 / span 12;
+    padding-left: 4rem;
+  }
+
+  .info-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .timezone-info,
+  .day-of-year-info,
+  .day-of-week-info,
+  .week-number-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .info-label {
+    font-size: 0.813rem;
+  }
+
+  .info-data {
+    font-size: 1.8rem;
+  }
+
+  .day {
+    background-image: url("./assets/tablet/bg-image-daytime.jpg");
+  }
+
+  .night {
+    background-image: url("./assets/tablet/bg-image-nighttime.jpg");
+  }
+}
+
+@media (min-width: 1120px) {
+  .grid-container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .quote-container {
+    grid-column: 1 / span 7;
+    padding: 3.5rem 0 0 10.313rem;
+  }
+
+  .time-container {
+    padding-left: 10.313rem;
+  }
+
+  .time-info-container {
+    padding-left: 10.313rem;
+  }
+
+  .day {
+    background-image: url("./assets/desktop/bg-image-daytime.jpg");
+  }
+
+  .night {
+    background-image: url("./assets/desktop/bg-image-nighttime.jpg");
+  }
+}
