@@ -20,7 +20,7 @@ const weekNumberData = document.querySelector(".week-number-data");
 const timeInfoContainer = document.querySelector(".time-info-container");
 
 const quoteURL = "https://api.quotable.io/random";
-const timeURL = "http://worldtimeapi.org/api/ip";
+const timeURL = "https://worldtimeapi.org/api/ip";
 const locationURL = "http://ip-api.com/json/";
 
 const fetchQuote = async () => {
