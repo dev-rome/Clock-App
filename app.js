@@ -21,7 +21,7 @@ const timeInfoContainer = document.querySelector(".time-info-container");
 
 const quoteURL = "https://api.quotable.io/random";
 const timeURL = "https://worldtimeapi.org/api/ip";
-const locationURL = "http://ip-api.com/json/";
+const locationURL = "https://ipinfo.io/json";
 
 const fetchQuote = async () => {
   try {
@@ -81,8 +81,8 @@ const fetchLocation = async () => {
       throw new Error("Data not found.");
     }
     const data = await res.json();
-    city.textContent = data.regionName.toUpperCase();
-    country.textContent = data.region;
+    city.textContent = data.city.toUpperCase();
+    country.textContent = data.country;
   } catch (error) {
     console.log(error);
   }
