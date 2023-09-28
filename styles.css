@@ -212,6 +212,7 @@ body {
   }
 
   .time-container {
+    grid-column: 1 / span 10;
     grid-row-start: 2;
     padding-left: 4rem;
     align-self: baseline;
@@ -275,7 +276,16 @@ body {
   }
 
   .time-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 10.313rem;
+  }
+
+  .btn-info {
+    margin: 0;
+    align-self: flex-end;
+    cursor: pointer;
   }
 
   .time-info-container {
