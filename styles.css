@@ -288,6 +288,10 @@ body {
     cursor: pointer;
   }
 
+  .btn-refresh {
+    cursor: pointer;
+  }
+
   .time-info-container {
     padding-left: 10.313rem;
   }
