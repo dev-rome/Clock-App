@@ -26,6 +26,8 @@ Users should be able to:
 - Generate random programming quotes by clicking the refresh icon near the quote
 
 ### Screenshot
+<img width="1440" alt="Screenshot 2023-10-12 at 9 29 27 AM" src="https://github.com/dev-rome/Clock-App/assets/84602714/0c2b6174-962a-4239-a96d-c820648b3cfb">
+<img width="1440" alt="Screenshot 2023-10-12 at 9 29 43 AM" src="https://github.com/dev-rome/Clock-App/assets/84602714/e5be13b9-b008-4445-b784-2c889ff3bd17">
 <img width="1440" alt="Screenshot 2023-10-12 at 9 20 17 AM" src="https://github.com/dev-rome/Clock-App/assets/84602714/5e050b8f-ae5f-4665-8ae2-146e495929a5">
 <img width="1440" alt="Screenshot 2023-10-12 at 9 20 45 AM" src="https://github.com/dev-rome/Clock-App/assets/84602714/a9b9582e-25a5-4ea2-892c-5d0f8142039d">
 
